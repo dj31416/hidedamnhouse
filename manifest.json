@@ -1,0 +1,17 @@
+{
+  "name": "HideDamnHouse",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "hide the search results from 591.com.tw ",
+  "background": "background.html",
+  "browser_action": {
+    "name": "HideHouse",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery.js", "content.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
